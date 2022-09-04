@@ -9,7 +9,9 @@
 html,
 body {
     background-color: rgb(251, 251, 241);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -23,8 +25,32 @@ h2 {
 #hero {
     background-color: aqua;
     height: 400px;
-    box-shadow: inset 3px 3px 30px rgba(0, 0, 0, .3);
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.section-one {
+    border: 1px solid;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.clock  {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding-left: 30px;
 }
